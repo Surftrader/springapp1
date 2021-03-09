@@ -11,4 +11,9 @@
         class="ua.com.poseal.springcourse.ClassicalMusic">
     </bean>
 
+    <bean id="musicPlayer"
+          class="ua.com.poseal.springcourse.MusicPlayer">
+        <constructor-arg ref="musicBean" />
+    </bean>
+
 </beans>
