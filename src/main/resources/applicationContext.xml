@@ -14,7 +14,8 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="ua.com.poseal.springcourse.MusicPlayer">
+          class="ua.com.poseal.springcourse.MusicPlayer"
+            scope="prototype">
         <property name="music" ref="musicBean" />
 
         <property name="name" value="${musicPlayer.name}" />
