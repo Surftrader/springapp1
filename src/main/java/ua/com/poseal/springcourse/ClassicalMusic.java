@@ -1,8 +1,10 @@
 package ua.com.poseal.springcourse;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("classicalMusic")
+@Scope("singleton")
 public class ClassicalMusic implements Music {
     @Override
     public String getSong() {
