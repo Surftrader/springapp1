@@ -1,11 +1,8 @@
 package ua.com.poseal.springcourse;
 
-import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component("classicalMusic")
 public class ClassicalMusic implements Music {
 
     @PostConstruct
