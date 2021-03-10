@@ -9,7 +9,6 @@ public class MusicPlayer {
     private Music music;
 
     // Ioc
-    @Autowired
     public MusicPlayer(Music music) {
         this.music = music;
     }
@@ -19,4 +18,9 @@ public class MusicPlayer {
         System.out.println("Playing: " + music.getSong());
     }
 
+
+    @Autowired
+    public void setMusic(Music music) {
+        this.music = music;
+    }
 }
